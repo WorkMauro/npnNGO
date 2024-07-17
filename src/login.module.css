@@ -1,0 +1,58 @@
+* {
+  background-color: gray;
+}
+
+.login {
+  background-color: rgba(255, 255, 255, 0.2);
+  display: grid;
+  color: blue;
+  justify-content: center;
+  align-content: center;
+  font-size: 24px;
+  width: 600px;
+  height: 600px;
+  border-radius: 10px;
+  margin: -900px 0px 0px 1420px;
+  border: 1px solid blue;
+}
+h2,
+h3 {
+  color: black;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+label {
+  margin: 10px, 10px;
+  background-color: transparent;
+}
+
+.usina {
+  display: flex;
+  z-index: -1;
+  height: 1020px;
+  width: 1400px;
+}
+
+h1 {
+  background-color: transparent;
+  display: flex;
+  justify-content: end;
+  align-content: end;
+  font-size: 50px;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  justify-content: end;
+  align-content: end;
+  background-color: transparent;
+}
+
+form {
+  background-color: transparent;
+}

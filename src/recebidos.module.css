@@ -1,0 +1,143 @@
+:root {
+  --base-color: #fffcf2;
+  --second-color: #003c4e;
+  --third-color: #4cb944;
+  --fourth-color: #4c5454;
+  --five-color: #4d9de0;
+  --sixth-color: #0a2239;
+  --seventh-color: #ff1f1f;
+  --eigth-color: #0f0f0f;
+  --nine-color: #c0e6de;
+  --ten-color: #f0f8ff;
+
+  --font1: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  --font2: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  --font3: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  color: white;
+}
+
+.main {
+  background-color: #0f0f0f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.pedidos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  justify-items: center;
+  max-width: 100%;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  max-width: 100%;
+}
+
+.lista {
+  background-color: var(--eigth-color);
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  height: 300px;
+  width: 250px;
+  margin: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.lista::before {
+  position: absolute;
+  content: "";
+  height: 330px;
+  width: 280px;
+  background: tomato;
+  border-radius: 15px;
+  z-index: -1;
+  transition: 0.8s;
+  margin: -15px;
+  animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+  50% {
+    filter: hue-rotate(350deg);
+  }
+}
+
+.lista::before li p {
+  margin: 0.4px 0px 0px 5px;
+  background-color: var(--eigth-color);
+}
+
+.acceptButton {
+  background-color: var(--nine-color);
+  width: 180px;
+}
+
+ul {
+  z-index: 0;
+  background-color: var(--eigth-color);
+}
+
+ul li p {
+  margin: 0px;
+  background-color: var(--eigth-color);
+  font-size: 16px;
+}
+
+.acceptButton:hover {
+  background-color: green;
+  border: none;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.rejectButton {
+  background-color: var(--nine-color);
+  width: 180px;
+}
+
+.rejectButton:hover {
+  color: black;
+  font-weight: bold;
+  background-color: red;
+  text-transform: uppercase;
+}
+
+.link {
+  margin: 10px 20px 0px -50px;
+  text-decoration: none;
+  color: #f0f8ff;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,99 @@
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  color: #ff0000;
+}
+
+.background {
+  background-color: #22333b;
+  min-height: 100vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+  z-index: -2;
+}
+.select {
+  display: grid;
+  place-items: center;
+  position: relative;
+  height: 500px;
+  width: 350px;
+  font-size: 40px;
+  font-weight: bolder;
+  border-radius: 15px;
+  cursor: pointer;
+  z-index: 1;
+  transition: 0.8s;
+}
+
+.select:hover {
+  box-shadow: 10px 10px 30px 30px rgba(255, 0, 0, 0.345);
+  scale: 1.1;
+}
+a {
+  height: 500px;
+  width: 350px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 15px;
+  z-index: 2;
+}
+
+/*.select::before {
+  position: absolute;
+  content: "";
+  height: 520px;
+  width: 370px;
+  background-color: tomato;
+  border-radius: 15px;
+  z-index: -1;
+  transition: 2s;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  50% {
+    filter: hue-rotate(350deg);
+  }
+}
+*/
+
+.select {
+  overflow: hidden;
+}
+
+.select::before {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 180%;
+  background: #92140c;
+  transform: rotate(45deg);
+  animation: animate2 4s linear infinite;
+}
+
+.select::after {
+  position: absolute;
+  content: "";
+  inset: 6px;
+  background: #f0f8ff;
+  border-radius: 15px;
+  z-index: 0;
+}
+
+@keyframes animate2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
