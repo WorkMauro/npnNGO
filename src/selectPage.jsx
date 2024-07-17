@@ -8,7 +8,7 @@ return(
             <a href={"/pedidos"}>Atendente</a>
         </div>
         <div className={styles.select}>
-            <a>Separador</a>
+            <a href={"/separarPage"}>Separador</a>
         </div>
     </div>
 );
